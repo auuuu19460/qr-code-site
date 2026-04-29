@@ -1,65 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QR Code Site</title>
-
-    <!-- Auto redirect to the real page -->
-    <meta http-equiv="refresh" content="0; url=pages/qr-card.html" />
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-            display: grid;
-            place-items: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .card {
-            max-width: 420px;
-            background: white;
-            border-radius: 16px;
-            padding: 32px 24px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        h1 {
-            margin: 0 0 12px;
-            font-size: 28px;
-        }
-
-        p {
-            margin: 0 0 20px;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        a {
-            display: inline-block;
-            padding: 12px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            background: #111;
-            color: white;
-            font-weight: 600;
-        }
-
-        a:hover {
-            opacity: 0.9;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Card</title>
+    <link rel="stylesheet" href="../css/qr-card.css">
 </head>
 <body>
-<div class="card">
-    <h1>QR Code Site</h1>
-    <p>You are being redirected to the main page. If the page does not redirect automatically, click the button below.</p>
-    <a href="pages/qr-card.html">Go to Main Page</a>
-</div>
+<main class="card" aria-label="QR code card">
+    <div class="qr-panel">
+        <img class="qr-art" src="../img/image-qr-code.png" alt="QR code linking to Frontend Mentor">
+    </div>
+
+    <h1 class="card-title">Improve your front-end skills by building projects</h1>
+    <p class="card-copy">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+</main>
 </body>
 </html>
